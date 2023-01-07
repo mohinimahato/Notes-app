@@ -1,0 +1,18 @@
+body {
+    overflow: hidden;
+}
+
+/*_____________Header______________*/
+.navbar {
+    background: #20212c !important;
+}
+
+.header-title {
+    font-size: 36px;
+    font-family: Roboto;
+    font-weight: 600;
+    text-align: center;
+    color: #F7F2F2 !important;
+}
+
+/*_____________Header______________*/

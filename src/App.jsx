@@ -5,9 +5,7 @@ import Header from "./components/Header";
 const App = () => {
   return (
     <div>
-      <h1>My Notes</h1>
-      <Header name="New Notes" />
-      <input />
+      <Header name="My Notes" />
     </div>
   );
 };

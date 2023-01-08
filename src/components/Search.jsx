@@ -1,9 +1,9 @@
 const Search = (props) => {
   return (
     <div>
-      <div className="col-md-8 mx-auto my-4">
+      <div className="col-md-12 mx-auto my-auto">
         <div className="col-md-10 mx-auto">
-          <form className="d-flex">
+          <div className="d-flex">
             <input
               className="form-control me-2"
               type="search"
@@ -17,7 +17,7 @@ const Search = (props) => {
               Search
             </button>
             <div>{props.Search}</div>
-          </form>
+          </div>
         </div>
       </div>
     </div>

@@ -1,7 +1,8 @@
 // import React from "react";
 import { createRoot } from "react-dom/client";
 import Header from "./components/Header";
-import Search from "./components/Search";
+
+import AddNotes from "./components/AddNotes";
 
 const App = () => {
   return (
@@ -9,8 +10,9 @@ const App = () => {
       <div className="header-div">
         <Header name="My Notes" />
       </div>
+      <div></div>
       <div>
-        <Search search="Search Your Notes :)" />
+        <AddNotes />
       </div>
     </div>
   );

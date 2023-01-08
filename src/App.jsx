@@ -12,7 +12,7 @@ const App = () => {
       </div>
       <div></div>
       <div>
-        <AddNotes />
+        <AddNotes note="Click here to add notes" />
       </div>
     </div>
   );

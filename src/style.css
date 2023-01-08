@@ -1,18 +1,25 @@
 body {
     overflow: hidden;
+    background: #20212c;
+    font-family: Roboto;
+
 }
 
 /*_____________Header______________*/
 .navbar {
-    background: #20212c !important;
+    background: #17181f !important;
 }
 
 .header-title {
-    font-size: 36px;
+    font-size: 28px;
     font-family: Roboto;
-    font-weight: 600;
+    font-weight: 500;
     text-align: center;
     color: #F7F2F2 !important;
 }
 
 /*_____________Header______________*/
+.search-btn {
+    border: 2px solid white;
+    color: white;
+}

@@ -1,11 +1,17 @@
 // import React from "react";
 import { createRoot } from "react-dom/client";
 import Header from "./components/Header";
+import Search from "./components/Search";
 
 const App = () => {
   return (
     <div>
-      <Header name="My Notes" />
+      <div className="header-div">
+        <Header name="My Notes" />
+      </div>
+      <div>
+        <Search search="Search Your Notes :)" />
+      </div>
     </div>
   );
 };

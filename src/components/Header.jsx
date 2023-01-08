@@ -7,8 +7,8 @@ const Header = (props) => {
           <div className="col-10 border border-danger">
             <div className="col-md-1 ">
               <div className="container-fluid d-flex">
-                <img src={Icon} width="100" height="30" />
-                <a className="navbar-brand header-title mx-auto">
+                <img src={Icon} width="80" height="20" className="my-auto" />
+                <a className="navbar-brand header-title mx-auto px-3">
                   {props.name}
                 </a>
               </div>

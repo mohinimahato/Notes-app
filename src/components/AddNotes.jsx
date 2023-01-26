@@ -1,4 +1,5 @@
 import Add from "../icons/Add.png";
+import Cards from "./Cards";
 const AddNotes = (props) => {
   return (
     <div>
@@ -16,6 +17,9 @@ const AddNotes = (props) => {
           </div>
         </div>
       </div>
+      {/*----Notes----*/}
+      <Cards />
+      {/*----Notes----*/}
     </div>
   );
 };

@@ -2,6 +2,7 @@ body {
     overflow: hidden;
     background: #20212c;
     font-family: Roboto;
+    color: #F7F2F2 !important;
 
 }
 
@@ -44,3 +45,47 @@ body {
     font-size: 14px;
     font-style: italic;
 }
+
+/*____________popup btn___________*/
+.add-notes-popup-btn {
+    /* background: rgb(221, 85, 192); */
+    background: linear-gradient(90deg, rgba(221, 85, 192, 1) 0%, rgba(248, 76, 96, 1) 10%, rgba(96, 20, 67, 1) 100%);
+}
+
+/*____________popup btn___________*/
+/*_____________Cards Bg___________*/
+.cards-bg {
+    background: #17181f;
+    box-shadow: 2px 4px 8px rgb(0 0 0 / 25%);
+    border-radius: 15px;
+}
+
+.priority-badge {
+    background: #ca051c;
+    box-shadow: 2px 4px 8px rgb(0 0 0 / 25%);
+    font-size: 14px;
+    border-radius: 15px;
+}
+
+.notes-text {
+    font-size: 15px;
+}
+
+.delete-btn {
+    background: #20212c;
+    border: 1px solid white;
+    box-shadow: 2px 4px 8px rgb(0 0 0 / 25%);
+    padding: 4px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.edit-btn {
+    background: linear-gradient(90deg, rgba(221, 85, 192, 1) 0%, rgba(248, 76, 96, 1) 10%, rgba(96, 20, 67, 1) 100%);
+    box-shadow: 2px 4px 8px rgb(0 0 0 / 25%);
+    padding: 4px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/*_____________Cards Bg___________*/

@@ -34,7 +34,7 @@ const Cards = () => {
             <div className="col-md-11 p-4 cards-bg mx-auto ">
               <div className="col-12">
                 <div className="col-md-5">
-                  <div className="col-md-7 text-center priority-badge">
+                  <div className="col-md-8 text-center priority-badge-medium">
                     Medium🚀
                   </div>
                 </div>
@@ -61,7 +61,7 @@ const Cards = () => {
             <div className="col-md-11 p-4 cards-bg mx-auto ">
               <div className="col-12 ">
                 <div className="col-md-5">
-                  <div className="col-md-7 text-center priority-badge">
+                  <div className="col-md-7 text-center priority-badge-low">
                     Low❗
                   </div>
                 </div>

@@ -65,6 +65,23 @@ body {
     box-shadow: 2px 4px 8px rgb(0 0 0 / 25%);
     font-size: 14px;
     border-radius: 15px;
+    padding: 2px;
+}
+
+.priority-badge-medium {
+    background: #544622;
+    box-shadow: 2px 4px 8px rgb(0 0 0 / 25%);
+    font-size: 14px;
+    border-radius: 15px;
+    padding: 2px;
+}
+
+.priority-badge-low {
+    background: #1C4411;
+    box-shadow: 2px 4px 8px rgb(0 0 0 / 25%);
+    font-size: 14px;
+    border-radius: 15px;
+    padding: 2px;
 }
 
 .notes-text {

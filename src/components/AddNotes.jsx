@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Add from "../icons/Add.png";
 import Cards from "./Cards";
 const AddNotes = (props) => {

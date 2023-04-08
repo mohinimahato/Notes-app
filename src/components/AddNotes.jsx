@@ -1,13 +1,16 @@
-import { useState, useContext } from "react";
+import { useState } from "react";
 import Add from "../icons/Add.png";
-import Cards from "./Cards";
+
 const AddNotes = (props) => {
   const [notes, setNotes] = useState("");
-  // const [priority, setpriority] = useState("");
+  const [priority, setPriority] = useState("");
 
+  function handleSubmission() {
+    alert("btn working", setNotes(), setPriority());
+  }
   return (
-    <div>
-      <div className="col-md-8 mx-auto my-4">
+    <div className="addNotesContainer">
+      <div className="col-8 col-md-8 mx-auto my-4">
         <div className="col-md-8 mx-auto">
           <div className="input-group mb-3">
             <span className="input-group-text">
@@ -47,15 +50,17 @@ const AddNotes = (props) => {
                       onChange={(e) => setNotes(e.target.value)}
                     />
                     <div className="priorityDiv">
-                      <div className="col-md-12 d-flex justify-content-start">
-                        <div className="col-md-3 mt-md-4">Select priority:</div>
-                        <div className="col-md-9 my-auto">
-                          <div className="col-md-12 d-flex justify-content-start">
+                      <div className="col-md-12 d-md-flex justify-content-start">
+                        <div className="col-4 col-md-3 ms-3 ms-md-0 mb-3 mt-3 mb-md-0 mt-md-4 select_priority">
+                          Select priority:
+                        </div>
+                        <div className="col-12 col-md-9 my-auto">
+                          <div className="col-12 col-md-12 d-flex justify-content-start">
                             <div className="col-md-3 my-auto">
                               <div className="col-md-12">
                                 <input
                                   type="radio"
-                                  value="high"
+                                  value="🔥High"
                                   name="priority"
                                   id="high"
                                 />
@@ -76,7 +81,7 @@ const AddNotes = (props) => {
                               <div className="col-md-12 mt-md-4">
                                 <input
                                   type="radio"
-                                  value="medium"
+                                  value="🚀Medium"
                                   name="priority"
                                   id="medium"
                                 />
@@ -96,7 +101,7 @@ const AddNotes = (props) => {
                               <div className="col-md-12">
                                 <input
                                   type="radio"
-                                  value="Low"
+                                  value="❗Low"
                                   name="priority"
                                   id="low"
                                 />
@@ -117,8 +122,12 @@ const AddNotes = (props) => {
                       </div>
                     </div>
                   </div>
-                  <div className="modal-footer justify-content-start mt-5">
-                    <button type="submit" className="btn btnModalAdd">
+                  <div className="modal-footer justify-content-start mt-3 mt-md-5">
+                    <button
+                      type="submit"
+                      className="btn btnModalAdd"
+                      onClick={handleSubmission}
+                    >
                       Add Notes
                     </button>
                     <button
@@ -136,9 +145,6 @@ const AddNotes = (props) => {
           </div>
         </div>
       </div>
-      {/*----Notes----*/}
-      <Cards />
-      {/*----Notes----*/}
     </div>
   );
 };

@@ -1,11 +1,11 @@
 const Search = (props) => {
   return (
-    <div>
-      <div className="col-md-12 mx-auto my-auto">
-        <div className="col-md-10 mx-auto">
-          <div className="d-flex">
+    <div className="mt-3 mt-md-0">
+      <div className="col-10 col-md-12 mx-auto my-auto">
+        <div className="col-12 col-md-10 mx-auto">
+          <div className="col-12 col-md-12 mx-auto d-flex">
             <input
-              className="form-control me-2"
+              className="form-control ms-3 ms-md-0  me-2 search-input"
               type="search"
               placeholder={props.search}
               aria-label="Search"

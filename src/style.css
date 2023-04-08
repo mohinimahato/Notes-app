@@ -1,5 +1,5 @@
 body {
-    overflow: hidden;
+    overflow-x: hidden;
     background: #20212c;
     font-family: Roboto;
     color: #F7F2F2 !important;
@@ -17,6 +17,22 @@ body {
     font-weight: 500;
     text-align: center;
     color: #F7F2F2 !important;
+    margin-left: 3%;
+}
+
+@media(max-width:768px) {
+    .myNotes-hIcon {
+        margin-left: 25%;
+    }
+
+    .header-title {
+        font-size: 28px;
+        font-family: Roboto;
+        font-weight: 500;
+        text-align: center;
+        color: #F7F2F2 !important;
+        margin-left: 3%;
+    }
 }
 
 /*_____________Header______________*/
@@ -26,8 +42,30 @@ body {
     color: #F7F2F2;
 }
 
+@media(max-width:768px) {
+    .search-input::placeholder {
+        font-size: 12px;
+
+    }
+
+    .search-btn {
+        font-size: 12px;
+        border: 2px solid #F7F2F2;
+        color: #F7F2F2;
+    }
+}
+
 /*____________Search______________*/
 /*___________Add Notes_____________*/
+.addNotesContainer {
+    margin-top: 7%;
+}
+
+@media(max-width:768px) {
+    .addNotesContainer {
+        margin-top: 40%;
+    }
+}
 
 /*___________Add Notes_____________*/
 .input-group-text {
@@ -46,8 +84,9 @@ body {
     font-size: 14px;
     font-style: italic;
     cursor: pointer;
-
 }
+
+
 
 /*____________popup btn___________*/
 .add-notes-popup-btn {
@@ -98,6 +137,12 @@ body {
 
 }
 
+@media(max-width:768px) {
+    .select_priority {
+        font-size: 14px;
+    }
+}
+
 /* Hide scrollbar for Chrome, Safari and Opera */
 .notes-text::-webkit-scrollbar {
     display: none;
@@ -119,6 +164,7 @@ body {
     border-radius: 10px;
     cursor: pointer;
 }
+
 
 /*_____________Cards Bg___________*/
 /*______________Add Notes_________*/
@@ -204,6 +250,28 @@ input:checked+label {
 
 .btn:hover {
     color: #FFFFFF;
+}
+
+@media(max-width:768px) {
+    .btnModalDiscard {
+
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        color: #FFFFFF;
+        width: 120px;
+        height: 28px;
+    }
+
+    .btnModalAdd {
+
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        color: #FFFFFF;
+        width: 120px;
+        height: 35px;
+    }
 }
 
 /*______________Add Notes_________*/

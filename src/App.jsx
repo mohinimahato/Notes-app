@@ -3,45 +3,61 @@ import { createRoot } from "react-dom/client";
 import Header from "./components/Header";
 import AddNotes from "./components/AddNotes";
 import Notes from "./components/Notes";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 const App = () => {
-  const onDelete = (note) => {
-    console.log("Deleting note", note);
+  let initNote;
+  if (localStorage.getItem("notes") === null) {
+    initNote = [];
+  } else {
+    initNote = JSON.parse(localStorage.getItem("notes"));
+  }
+  const addNotes = (desc, priority) => {
+    console.log("I'm adding new notes", desc, priority);
+    let id;
+    if (notes.length == 0) {
+      id = 0;
+    } else {
+      id = notes[notes.length - 1].id + 1;
+    }
 
+    console.log(id);
+    const myNotes = {
+      id: id,
+      priority: priority,
+      desc: desc,
+    };
+    setNotes([...notes, myNotes]);
+  };
+  const onDelete = (note) => {
     setNotes(
       notes.filter((e) => {
         return e !== note;
       })
     );
   };
-  const onEdit = (notes) => {
-    console.log("Editing note", notes);
+  const onEdit = (note) => {
+    console.log("Editing note", note);
   };
 
-  const [notes, setNotes] = useState([
-    { id: 0, priority: "High🔥", desc: "Test " },
-    { id: 1, priority: "Medium🚀", desc: "Test 2" },
-    { id: 2, priority: "Low❗", desc: "Test 3" },
-    { id: 3, priority: "Low❗", desc: "Test 3" },
-    { id: 4, priority: "Low❗", desc: "Test 3" },
-    { id: 5, priority: "Low❗", desc: "Test 3" },
-  ]);
+  const [notes, setNotes] = useState(initNote);
+  useEffect(() => {
+    localStorage.setItem("notes", JSON.stringify(notes));
+  }, [notes]);
 
   return (
     <div>
-      <form method="get" action="/">
-        <div className="header-div">
-          <Header name="My Notes" />
-        </div>
+      <div className="header-div">
+        <Header name="My Notes" />
+      </div>
 
-        <div>
-          <AddNotes
-            note="Click here to add notes"
-            className="border border-danger"
-          />
-          <Notes notes={notes} onDelete={onDelete} onEdit={onEdit} />
-        </div>
-      </form>
+      <div>
+        <AddNotes
+          note="Click here to add notes"
+          className="border border-danger"
+          addNotes={addNotes}
+        />
+        <Notes notes={notes} onDelete={onDelete} onEdit={onEdit} />
+      </div>
     </div>
   );
 };

@@ -11,7 +11,6 @@ const AddNotes = (props) => {
       alert("Description or priority can't be blank!");
     } else {
       props.addNotes(desc, priority);
-      // console.log("I'm consoling,", desc, priority);
     }
   };
   return (
@@ -116,10 +115,10 @@ const AddNotes = (props) => {
                                 <div className="col-md-12">
                                   <input
                                     type="radio"
-                                    value="❗Low"
+                                    value="🥑Low"
                                     name="priority"
                                     id="low"
-                                    checked={priority === "❗Low"}
+                                    checked={priority === "🥑Low"}
                                     onChange={(e) => {
                                       setPriority(e.target.value);
                                     }}
@@ -132,7 +131,7 @@ const AddNotes = (props) => {
                                       width: "90px",
                                     }}
                                   >
-                                    ❗Low
+                                    🥑Low
                                   </label>
                                 </div>
                               </div>

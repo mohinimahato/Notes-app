@@ -11,7 +11,7 @@ const Notes = (props) => {
                 note={notes}
                 key={notes.id}
                 onDelete={props.onDelete}
-                onEdit={props.onEdit}
+                // onEdit={props.onEdit}
               />
             );
           })}

@@ -19,7 +19,7 @@ const Header = (props) => {
                 </a>
               </div>
             </div>
-            <div className="col-md-4 my-auto">
+            <div className="col-md-4 my-auto d-none">
               <Search search="Search For Your Notes!" />
             </div>
           </div>

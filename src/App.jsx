@@ -35,9 +35,10 @@ const App = () => {
       })
     );
   };
-  const onEdit = (note) => {
-    console.log("Editing note", note);
-  };
+  // const onEdit = (note) => {
+  //   console.log("Editing note", note);
+  //   setNotes(notes)
+  // };
 
   const [notes, setNotes] = useState(initNote);
   useEffect(() => {
@@ -56,7 +57,7 @@ const App = () => {
           className="border border-danger"
           addNotes={addNotes}
         />
-        <Notes notes={notes} onDelete={onDelete} onEdit={onEdit} />
+        <Notes notes={notes} onDelete={onDelete} />
       </div>
     </div>
   );

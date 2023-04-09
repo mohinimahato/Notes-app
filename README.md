@@ -1,8 +1,7 @@
 # Notes-app
 
-1. Search Bar
-2. Dark/Light Toggle
-3. Popup for adding notes
-4. Delete Notes
-5. Edit Notes
-6. Priority tabs
+1. Popup for adding notes
+2. Delete Notes
+3. Local storing
+4. Priority tabs
+5. <!-- 5. Edit Notes -->
